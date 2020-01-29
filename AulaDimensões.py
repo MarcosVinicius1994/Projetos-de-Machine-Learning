@@ -9,6 +9,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 np.random.seed(0)
+
 k=3
 
 print("\n teste");
