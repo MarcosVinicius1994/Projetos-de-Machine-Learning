@@ -9,7 +9,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 np.random.seed(0)
-
 k=3
 
 print("\n teste");
@@ -60,11 +59,11 @@ for i_grid in range(0,len(seq)):
 
       for i in range(0,N1+N2):
         distancia[i]=np.linalg.norm(X[i] - ponto_teste)
-     
+
       distancia = np.concatenate((distancia,labels.reshape(N1+N2,1)),axis=1)
-     
+
       distancia_ord =distancia[distancia[:,0].argsort()]
-     
+
 
 
 
@@ -72,10 +71,10 @@ for i_grid in range(0,len(seq)):
          Z[i_grid,j_grid] =-1
       else:
        Z[i_grid,j_grid] =1
-       
-       
-       
+
+
+
  fig, ax2 =plt.subplots(nrows=1)
 
 ax2.countour(seq, seq, Z, Levels=0, linewidths=1, colors='k')
-ctr1 = ax2.contourf(seq, seq, Z, levels=1, alpha=0.3, colors=['red','blue'])     
+ctr1 = ax2.contourf(seq, seq, Z, levels=1, alpha=0.3, colors=['red','blue'])
