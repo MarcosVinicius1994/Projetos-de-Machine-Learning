@@ -1,0 +1,44 @@
+Nome: Marcos Vinicius Timoteo Nunes
+Matricula: 16.2.8388
+Disciplina: Sistemas de Apoio a Decisão
+Professora: Janniele Aparecida Soares Araujo
+
+
+Estudo de caso: Introdução a Data Warehouse
+
+
+Pergunta 1:
+Quais problemas organizacionais são criados  pelo fato  de esses dados  não estarem  em um unico padrão?
+ 
+Resposta:
+ Como os dois bancos de dados estão modelados e estruturados de formas diferentes, podem ocorrer problemas
+quando a gestão da organização iniciar a tentativa de recuperar as informações dos mesmos, pois, ambos os bancos
+modelam as mesmas entidades e com os mesmos valores, mas com nomenclaturas diferentes. Isso trará inconsistencias nos dados
+e possvelmente necessitará de metricas para unificar os dois modelos de armazenamento.
+
+Pergunta 2:
+Seria facil criar um banco de dados com um formato único que pudesse  armazenar  os dados  de ambos os sistemas? Identifique os problemas
+a serem resolvidos.
+
+Resposta:
+Seria necessaria a modelagem de um unico banco, ou seja, a união dos dois modelos retirando as inconsistencias geradas
+pela não padronização dos mesmos, utilização de normas em relação aos caracteres especiais, modelagem da integridade de
+do banco com utilização correta de chaves estrangeiras, primarias e etc.
+
+
+Pergunta 3:
+Os problemas deveriam ser solucionados por especialistas em bancos de dados  ou pelos gerentes gerais da empresa?Explique.
+
+Resposta:
+Pela junção dos dois niveis ou profissionais, pois a gerencia da empresa pode ter uma visão mais amplificada das 
+atividades de vendas da organização, portanto, saberão como se da o fluxo de informações no processo de 
+realização de saidas dos produtos e também do registro dessa atividade. Assim como os especialistas em banco de dados
+também serão importantes, pois os mesmos possuem tecnicas especializadas para modelagem dos bancos, utilizando normalização
+e eliminando as inconsistencias.
+
+pergunta 4:
+Para as informações  do data warehouse dessa empresa, quem deve ter autoridade para  finalizar  um formato  único padrão?
+
+Resposta:
+Os gestores de TI, gestores gerais e administradores de banco de dados da empresa, pois, seria necessario que toda equipe envolvida
+estejam a par de como a informação esta sendo tratada pela organização.
