@@ -14,11 +14,10 @@ database = database.iloc[:,1:11]
 #
 #database.drop('1000025', inplace=True, axis=1)
 
-#teste...
 
 #Dados randomicos no database
 r = np.random.permutation(len(database))
-
+ 
 base2 = database.iloc[r,:]
 
 
@@ -47,7 +46,7 @@ aux.iloc[true]=1
 true = aux == 2
 
 #Onde é false, ou 2 recebera -1
-aux.iloc[true] = -1
+aux.iloc[true] = -1 
 
 saida_Treino  = aux.iloc[0:np.int(np.floor(len(aux)*0.7)),:]
 saida_Teste =  aux.iloc[0:np.int(np.floor(len(aux)*0.3)),:]
@@ -60,7 +59,7 @@ classifier.fit(DataTrain, saida_Treino)
 Pred = classifier.predict(teste.iloc[:,0:9])
 
 
-
+ 
 print(confusion_matrix(saida_Teste, Pred))
 print(classification_report(saida_Teste, Pred))
 
@@ -86,8 +85,8 @@ for i in range(len(Aux)):
     if Aux[i]== 1:
      Aux[i]=1
     else:
-     Aux[i]=-1
-
+     Aux[i]=-1 
+     
 
 
 
@@ -100,10 +99,11 @@ for i in range(len(Aux)):
 #    if Pred[i]== 1:
 #     VP +=1
 #    else:
-#     VN +=1
+#     VN +=1   
 #print(VP)
 #print(VN)
 
 Vanterior = sum(saida_Teste.iloc[:,0]==1)
 
 Fanterior  = sum(saida_Teste.iloc[:,0]==-1)
+
